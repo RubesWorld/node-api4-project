@@ -15,11 +15,9 @@ server.use(morgan("dev"));
 
 server.use("/api/hubs", hubsRouter);
 
+server.use(helmet());
 server.use(cors());
 server.use(express.json());
-server.use(helmet());
-
-server.use(express.static(path.join(__dirname, "client/build")));
 
 server.use("/api/*", (_, res) => {
   res.json({ data: "Welcome to the Big League Socials API" });
