@@ -22,8 +22,4 @@ server.use("/api/*", (_, res) => {
   res.json({ data: "Welcome to the Big League Socials API" });
 });
 
-server.use("*", (_, res) => {
-  res.sendFile(path.join(__dirname, "client/build", "index.html"));
-});
-
 module.exports = server;
