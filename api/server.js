@@ -9,7 +9,6 @@ const hubsRouter = require("./hubs/hubs-router.js");
 const mw = require("./middleware/middlewares");
 
 const server = express();
-const port = process.env.PORT || 9000;
 
 server.use(morgan("dev"));
 
