@@ -7,8 +7,8 @@
     "node": "14.15.0"
   },
   "scripts": {
-    "start": "node index.js",
-    "server": "nodemon index.js"
+    "start": "node index",
+    "server": "nodemon index"
   },
   "repository": {
     "type": "git",
